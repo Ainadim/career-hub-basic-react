@@ -10,7 +10,7 @@ const JobDetails = props => {
     console.log(job);
     return (
         <div>
-            <h2>Here is the Job detail page</h2>
+            <h2>Job Details</h2>
             
         </div>
     );
