@@ -9,7 +9,6 @@ const JobDetails = props => {
     const { id } = useParams()
     const idNum = parseInt(id)
     const job = jobs.find(job => job.id === idNum)
-    console.log(job);
     return (
         <div>
             <div className='bg-base-200 h-72 h-auto p-5 relative grid content-center'>
@@ -24,9 +23,9 @@ const JobDetails = props => {
                     <p> <span className='font-bold'>Educational Requirements:</span> {job.educational_requirements}</p>
                     <p> <span className='font-bold'>Experiences:</span> {job.experiences}</p>
                 </div>
-                <div>
-                    <div className='w-2/6 bg-sky-200 rounded-md'>
-                        <div className='p-5 space-y-10'>
+                <div className='w-2/6 space-y-5'>
+                    <div className='bg-sky-200 rounded-md'>
+                        <div className='p-10 space-y-10'>
                             <div className=''>
                                 <h2 className='font-bold text-1xl'>Job Details</h2>
                                 <div className='h-[1px] bg-fuchsia-700 w-auto my-3'></div>
@@ -42,7 +41,7 @@ const JobDetails = props => {
                             </div>
                         </div>
                     </div>
-                    <button className='btn btn-primary'>Apply now</button>
+                    <button className='btn btn-primary min-w-full'>Apply now</button>
                 </div>
 
             </div>
